@@ -1,0 +1,226 @@
+// Variables 
+$color-main: #f1c40f;
+$color-text-light: #fff;
+$color-background: #f1f2f6;
+$color-dark: #2d3436;
+
+$font-logo: 'Pacifico', cursive;
+$font-title: 'Oswald', Sans-Serif;
+$font-text: 'Quattrocento', Serif;
+
+// Global
+*, *::before, *::after {
+    box-sizing: border-box;    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body {
+    font-family: $font-text;
+}
+
+.btn {
+    border: none;
+    background-color: $color-main;
+    padding: 16px;
+    min-width: 160px;
+    color: $color-text-light;
+    width: 215px;
+    font-family: $font-title;
+    letter-spacing: 1.2;
+}
+
+// Navigation
+.navigation {
+    background: none;
+    margin-top: 14px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    p {
+        margin: 10px 100px;
+        color: $color-main;
+        font-family: $font-logo;
+        font-size: 25px;
+        margin: -5px 0 0 187px;
+    }
+    .main {
+        ul {
+            li {
+                display: inline-block; 
+                margin-right: 36px;
+                position: relative;
+                a {
+                    font-family: $font-title;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+}
+
+// Splash
+.splash {
+    height: 100vh;
+    position: relative; 
+    background-image: url('/images/kitchen.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    .splash-inner {
+        margin: auto;
+        max-width: 70%;
+        text-align: center;
+        margin-bottom: 125px;
+        .page-title {
+            margin: 0 0 -10px 0;
+            font-size: 38px;
+            line-height: 1.2;
+            color: #fff;
+            font-family: $font-text;
+            font-style: italic;
+            letter-spacing: .5px;
+        }
+        .page-subtitle {
+            font-weight: bold;
+            margin: 37px 0;
+            font-size: 66px;
+            color: #fff;
+            font-family: $font-title;
+        }
+    }
+}
+
+// Services 
+.services {
+    height: 515px;
+    .services-title {
+        margin: auto;
+        text-align: center;
+        margin-top: 102px;
+        h1 {
+            font-family: $font-title;
+            font-weight: bold;
+            font-size: 34px;
+            padding: 10px;
+            margin: 0;  
+        }
+        p {
+            font-style: italic;
+        }
+    }
+    .box {
+        flex: 0 0 20%;
+        text-align: center;
+        position: relative;
+        max-width: 20%;
+        padding: 10px;
+        margin: 0 30px;
+        i {
+            font-size: 30px;
+            color: $color-main;
+            border: 3px solid $color-main;
+            margin-top: 37px;
+            height: 65px;
+            width: 65px;
+            line-height: 65px;
+            border-radius: 50%;
+        }
+        h3 {
+            font-family: $font-title;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 21px;
+        }
+        p {
+            line-height: 20px;
+        }
+    }
+}
+
+// Our-portfolio
+.our-portfolio {
+    background-color: $color-background;
+    height: 1120px;
+    .our-portfolio-title {
+        text-align: center;
+        margin-top: 108px;
+        h1 {
+            font-size: 36px;
+            font-family: $font-title;
+            font-weight: bold;
+        }
+        p {
+            font-size: 15px;
+            font-family: $font-text;
+            font-style: italic;
+            letter-spacing: .8px;
+        }
+    }
+    .box-portfolio {
+        flex: 0 0 33.333%;
+        position: relative;
+        height: 355px;
+        margin: 50px 15px 0;
+        max-width: 265px;
+        .box-image {
+            img {
+                object-fit: cover;
+                height: 270px;
+                max-width: 265px;
+            }
+        }
+        .box-description {
+            background-color: $color-text-light;
+            height: 85px;
+            max-width: 265px;
+            text-align: center;
+            padding: 22px;
+            h1 {
+                font-size: 15px;
+                font-weight: bold;
+                font-family: $font-title;
+            }
+            p {
+                font-size: 12px;
+                font-family: $font-text;
+                font-style: italic;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+// Footer 
+.footer-list {
+    display: flex;
+    justify-content: center;
+   
+    li {
+        font-size: 0;
+        width: 36px;
+        height: 36px;
+        background-color: #2d3436;
+        text-align: center;
+        border-radius: 50%;  
+        margin: 35px 15px 0 0px;
+        i {
+            font-size: 15px;
+            color: #fff;
+            margin: 12px;
+        }
+    }
+}

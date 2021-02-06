@@ -1,0 +1,235 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+body {
+  font-family: "Quattrocento", Serif;
+}
+
+.btn {
+  border: none;
+  background-color: #f1c40f;
+  padding: 16px;
+  min-width: 160px;
+  color: #fff;
+  width: 215px;
+  font-family: "Oswald", Sans-Serif;
+  letter-spacing: 1.2;
+}
+
+.navigation {
+  background: none;
+  margin-top: 14px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.navigation p {
+  margin: 10px 100px;
+  color: #f1c40f;
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+  margin: -5px 0 0 187px;
+}
+
+.navigation .main ul li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+}
+
+.navigation .main ul li a {
+  font-family: "Oswald", Sans-Serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("/images/kitchen.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash .splash-inner {
+  margin: auto;
+  max-width: 70%;
+  text-align: center;
+  margin-bottom: 125px;
+}
+
+.splash .splash-inner .page-title {
+  margin: 0 0 -10px 0;
+  font-size: 38px;
+  line-height: 1.2;
+  color: #fff;
+  font-family: "Quattrocento", Serif;
+  font-style: italic;
+  letter-spacing: .5px;
+}
+
+.splash .splash-inner .page-subtitle {
+  font-weight: bold;
+  margin: 37px 0;
+  font-size: 66px;
+  color: #fff;
+  font-family: "Oswald", Sans-Serif;
+}
+
+.services {
+  height: 515px;
+}
+
+.services .services-title {
+  margin: auto;
+  text-align: center;
+  margin-top: 102px;
+}
+
+.services .services-title h1 {
+  font-family: "Oswald", Sans-Serif;
+  font-weight: bold;
+  font-size: 34px;
+  padding: 10px;
+  margin: 0;
+}
+
+.services .services-title p {
+  font-style: italic;
+}
+
+.services .box {
+  -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+  text-align: center;
+  position: relative;
+  max-width: 20%;
+  padding: 10px;
+  margin: 0 30px;
+}
+
+.services .box i {
+  font-size: 30px;
+  color: #f1c40f;
+  border: 3px solid #f1c40f;
+  margin-top: 37px;
+  height: 65px;
+  width: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+}
+
+.services .box h3 {
+  font-family: "Oswald", Sans-Serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 21px;
+}
+
+.services .box p {
+  line-height: 20px;
+}
+
+.our-portfolio {
+  background-color: #f1f2f6;
+  height: 1120px;
+}
+
+.our-portfolio .our-portfolio-title {
+  text-align: center;
+  margin-top: 108px;
+}
+
+.our-portfolio .our-portfolio-title h1 {
+  font-size: 36px;
+  font-family: "Oswald", Sans-Serif;
+  font-weight: bold;
+}
+
+.our-portfolio .our-portfolio-title p {
+  font-size: 15px;
+  font-family: "Quattrocento", Serif;
+  font-style: italic;
+  letter-spacing: .8px;
+}
+
+.our-portfolio .box-portfolio {
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  position: relative;
+  height: 355px;
+  margin: 50px 15px 0;
+  max-width: 265px;
+}
+
+.our-portfolio .box-portfolio .box-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 270px;
+  max-width: 265px;
+}
+
+.our-portfolio .box-portfolio .box-description {
+  background-color: #fff;
+  height: 85px;
+  max-width: 265px;
+  text-align: center;
+  padding: 22px;
+}
+
+.our-portfolio .box-portfolio .box-description h1 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Oswald", Sans-Serif;
+}
+
+.our-portfolio .box-portfolio .box-description p {
+  font-size: 12px;
+  font-family: "Quattrocento", Serif;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.footer-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.footer-list li {
+  font-size: 0;
+  width: 36px;
+  height: 36px;
+  background-color: #2d3436;
+  text-align: center;
+  border-radius: 50%;
+  margin: 35px 15px 0 0px;
+}
+
+.footer-list li i {
+  font-size: 15px;
+  color: #fff;
+  margin: 12px;
+}
+/*# sourceMappingURL=style.css.map */
